@@ -1,8 +1,8 @@
 Show Live Server Preview
 <table>
-<thead>
-<tr>
-<th>name</th>
+<thead>- head of table
+<tr> - table row 
+<th>name</th> - name of table // column details
 <th>roll no.</th>
 <th>marks</th>
 </tr>
@@ -19,7 +19,9 @@ method
 
 ELEMENTS IN FORM 
 <input> 
+
 attributes in input- 
+
 type="text"
 name="firstname"
 value="male"
@@ -47,8 +49,8 @@ user details
 and 
 payment details
 
-<fieldset></fieldset>
-<legend></legend>
+<fieldset></fieldset> - to create a border over any input type
+<legend></legend> - the heading across the border// cutting through border
 
 ATTRIBUTE- required makes it compulsory to fill the space like
 <input type="text name="name" id="name" required> this makes it necessary to fill the blank
