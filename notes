@@ -1,0 +1,368 @@
+Show Live Server Preview
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>roll no.</th>
+<th>marks</th>
+</tr>
+</thead>
+
+</table>
+
+Tables- 
+<th colspan >
+
+FORMS- 
+action 
+method
+
+ELEMENTS IN FORM 
+<input> 
+attributes in input- 
+type="text"
+name="firstname"
+value="male"
+
+input types- 
+text (normal first name last name) 
+<input type="text">
+<input type="password">
+<input type="radio">
+<input type="checkbox">
+<input type="file">
+<input type="submit">
+<input type="reset">
+<input type="image">
+(dropdown box)
+<select>
+ <option value="delhi">Delhi</option>
+.
+.
+</select>
+<textarea> (to store multiple lines as answers)
+
+Payment form- 
+user details 
+and 
+payment details
+
+<fieldset></fieldset>
+<legend></legend>
+
+ATTRIBUTE- required makes it compulsory to fill the space like
+<input type="text name="name" id="name" required> this makes it necessary to fill the blank
+
+Navigation <nav>
+tags that have no meaning
+<div> - to group a bunch of statements- block level element
+<span> - inline element
+
+
+WHIMSICAL
+- to layout a website we use whimsical
+
+CSS-
+<link rel="stylesheet" href="mystyle.css">
+
+margin_left:20px;
+internal css-
+<style>
+    {
+        background-color:linen;
+    }
+</style>
+
+inline css-
+<h1 style="color:blue;text-align="left">
+
+inline css have highest priority over external or internal css
+
+Comments - 
+/* Comments are given as */
+
+/* This is a multi-line
+comment*/
+
+css colors
+CSS BACKGROUND COLORS
+<h1 style="color:Tomato;"></p>
+<p style="color:Blue;"></p>
+
+CSS BORDER COLORS
+<h1 style="border:2px solid tomato;"></h1>
+<p style="border:2px solid blue"></p>
+<h2 style="border color:2px solid hue"></h2>
+
+
+CSS Color Values- 
+RGB, HSL,,HEX
+RGB (Red,Green,Blue)
+rgb(90,255,2)
+HEX - 
+#rrggbb
+#ff0000- red
+#00ff00- green
+#0000ff- blue
+
+BACKGROUNDS- 
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background
+
+body{
+    background-color: lightblue;
+}
+to change opacity of background we use opacity 
+body{
+    background-color:blue;
+    opacity:0.3;
+}
+in RGB
+in rgb there is a 4th attribute called opacity rgb(0,10,20, 0.3)
+
+to add image to the background
+body{
+    background-image: url("paper.gif");
+}
+h1{
+    bacground-image: url("first.gif")
+}
+
+background repeat
+body{
+    background-image: url("school.jpg")
+    background-repeat: repeat-x;
+}
+body{
+    background-image: url("school.jpg")
+    background-repeat: repeat-y;
+}
+ background-repeat: no-repeat;
+
+ to change the position of the background position-
+ body{
+    background-image: url("university.jpeg")
+    background-repeat: repeat-y;
+    background position:right top;
+ }
+
+ Background Attachment-
+ makes sure if the background image ahould scroll or be fixed- 
+ body{
+    background-image: url("university.jpeg")
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
+ }
+body{
+    background-image: url("white.jpeg");
+
+}
+
+instead of writting entire background attributes we could write
+body{
+    background: #ffffff url("white.jpeg") no-repeat scroll top right;
+}
+ order is 
+ colour
+ url
+ repeat
+ attachment
+ position
+
+ CSS BORDERS- borders
+ border-style property 
+ values allowed- 
+ dotted
+ dashed
+ solid
+ double
+ groove
+ ridge
+ inset
+ outset
+ none hidden
+
+ border-style
+ border-width in px
+ .one{
+    border-style: double;
+    border-width: 5px;
+ }
+  to change width on top borders and bottom borders- 
+  p.one{
+    border-style: ridge;
+    border-width: 20px 5 px;
+  }
+20 px would be top and bottom border part and 5px would be sides border part
+
+BORDER COLOR-
+.one{
+    border-style: double;
+    border-color: red;
+}
+to have different border color for different sides- 
+.one{
+    border-style: ridge;
+    border-color: red green blue yellow;
+}
+
+CSS BORDER SHORTHAND PROPERTY- 
+means without giving border-width border-style border-color again and again we can just say 
+border: 5px ridge blue;
+
+border-width
+border-style
+border-color
+
+ROUNDED BORDERS- 
+round borders are of 3 types- 
+round 
+rounder 
+
+we do by using a border-radius
+
+.one{
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+CSS MARGINS- 
+to create space around elements 
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+shorthand follows the same order too
+the auto value
+margin:auto; 
+to horizontally center the element within its container
+
+the inherit vaule
+
+font-weight: 100px;
+
+line-height- to put height or spaces in between lines
+ 
+ text-decoration- to add lines over any text 
+ text-shadow- to add shadow like effect
+ text-align - 
+
+ DOM- document object model 
+
+ % - it is related to the body size 
+ em- it is time like 2em means 2 times 
+
+
+ CASCADING 
+ order is important in css 
+
+specificity in CSS- 
+start at 0 
+add 100 for each ID Value
+add 10 for each Class Value 
+add 1 for each element selector
+add 1000 for inline css
+
+for example- 
+p -- 1
+p.test -- 10+1 = 11
+p#demo -- 100+1 = 101
+<p style="color:pink;">- 1000
+
+INHERITANCE -
+<div>
+<p>hello world!</p>
+</div>
+
+here div is the parent and p is the child. so if we change properties of div properties of p will also change. 
+
+inherit- gives the same color as the parent.
+like color: inherit;
+ 
+!important- important is a keyword we put after the value to increase its specificity by 1000 like
+h1{
+    color: red;
+}
+h1{
+    color: blue !important;
+}
+ here color will be blue 
+
+
+OVERFLOW- 
+overflow:visible;
+overflow:hidden;
+overflow: scroll;
+overflow: auto; (same as scroll)
+
+object-fit: contain;
+
+cursor - to change what kind of pointer would go on the button or any element
+
+to center any body just do 
+margin:auto;
+width:50%;
+
+ADVANCED CSS PROPERTIES- 
+ 
+clip path generator- to change the shape of images
+
+box-sizing:
+
+responsiveness- 
+making sure of the layout in every device 
+
+media queries- 
+
+@media media-type
+
+@media screen and (max-width:600px) and (orientation: landscape)
+
+for body- 
+margin
+padding
+border
+background
+
+margin- things outside border 
+padding- area around the content 
+width and height are used to increase the content area not the area around the content 
+
+css outline- 
+outline is outside the border 
+outline style- solid/double/ridge
+outline-width- thin is typically 1px
+medium is typically 3px
+and thick is typically 5px
+
+shorthand property of outline- 
+
+outline: width style color;
+
+outline offset adds space between border and outline
+
+flexbox - 
+
+to position a flex container 
+main axis- horizontal axis 
+cross-axis- vertical axis 
+
+Display BLOCK ==
+display:block; = vertical 
+display: flex; = horizotal 
+
+justify content : space center;
+justify-content:space around;
+
+align-items: stretch;
+
+flex-wrap: wrap;
+boxes will wrap as the screen size decreases
